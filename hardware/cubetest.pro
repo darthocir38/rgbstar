@@ -1,4 +1,4 @@
-update=Do 02 Nov 2017 12:44:17 CET
+update=Mo 25 Dez 2017 10:47:34 CET
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=libs
 [eeschema/libraries]
 LibName1=cubetest-rescue
 LibName2=power
@@ -59,6 +59,5 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=esp01
-LibName32=ws2812b_wat
-LibName33=libs/WS2812B.pretty-master/Schematic-Symbol/ws2812b
+LibName31=libs/esp01
+LibName32=libs/ws2812b_wat
