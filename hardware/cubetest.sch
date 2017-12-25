@@ -238,7 +238,7 @@ NoConn ~ 1900 1300
 NoConn ~ 1900 1400
 NoConn ~ 1900 1500
 NoConn ~ 1500 1700
-Text GLabel 2350 2600 2    60   Input ~ 0
+Text GLabel 2250 3150 2    60   Input ~ 0
 D1in
 $Comp
 L +5V #PWR09
@@ -336,7 +336,7 @@ F 3 "" H 6900 3200 50  0001 C CNN
 $EndComp
 Text GLabel 7350 4050 2    60   Input ~ 0
 D1in
-Text GLabel 2350 3600 2    60   Input ~ 0
+Text GLabel 1950 3900 2    60   Input ~ 0
 D1out
 $Comp
 L R R1
@@ -420,8 +420,6 @@ F 3 "" H 1400 3800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1600 3150 1850 3150
-Connection ~ 1800 2950
-Connection ~ 1850 3150
 $Comp
 L ws2812b_wat U2
 U 1 1 59FA0E8C
@@ -483,7 +481,7 @@ F 3 "" H 6400 5250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3900 5000 3900 5150
-Text GLabel 2350 3100 2    60   Input ~ 0
+Text GLabel 1800 2950 2    60   Input ~ 0
 D2in
 Text GLabel 3850 5450 0    60   Input ~ 0
 D2in
@@ -491,7 +489,7 @@ Wire Wire Line
 	3850 5450 3900 5450
 Wire Wire Line
 	3900 5450 3900 5350
-Text GLabel 2350 4100 2    60   Input ~ 0
+Text GLabel 1850 3700 2    60   Input ~ 0
 D2out
 Text GLabel 6500 5400 2    60   Input ~ 0
 D2out
@@ -527,82 +525,12 @@ F 3 "" H 5150 4700 50  0001 C CNN
 	1    5150 4700
 	-1   0    0    1   
 $EndComp
-$Comp
-L GS3 J6
-U 1 1 59FAF174
-P 2200 2600
-F 0 "J6" H 2250 2800 50  0000 C CNN
-F 1 "GS3" H 2250 2401 50  0000 C CNN
-F 2 "Connect:GS3" V 2288 2526 50  0001 C CNN
-F 3 "" H 2200 2600 50  0001 C CNN
-	1    2200 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L GS3 J7
-U 1 1 59FAF47D
-P 2200 3100
-F 0 "J7" H 2250 3300 50  0000 C CNN
-F 1 "GS3" H 2250 2901 50  0000 C CNN
-F 2 "Connect:GS3" V 2288 3026 50  0001 C CNN
-F 3 "" H 2200 3100 50  0001 C CNN
-	1    2200 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1800 2500 1800 3000
-Wire Wire Line
-	1800 2500 2050 2500
-Wire Wire Line
-	1850 2700 1850 3200
-Wire Wire Line
-	1850 2700 2050 2700
 Wire Wire Line
 	1600 2950 1800 2950
 Wire Wire Line
-	1800 3000 2050 3000
-Wire Wire Line
-	1850 3200 2050 3200
-$Comp
-L GS3 J8
-U 1 1 59FAFCFA
-P 2200 3600
-F 0 "J8" H 2250 3800 50  0000 C CNN
-F 1 "GS3" H 2250 3401 50  0000 C CNN
-F 2 "Connect:GS3" V 2288 3526 50  0001 C CNN
-F 3 "" H 2200 3600 50  0001 C CNN
-	1    2200 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L GS3 J9
-U 1 1 59FAFD64
-P 2200 4100
-F 0 "J9" H 2250 4300 50  0000 C CNN
-F 1 "GS3" H 2250 3901 50  0000 C CNN
-F 2 "Connect:GS3" V 2288 4026 50  0001 C CNN
-F 3 "" H 2200 4100 50  0001 C CNN
-	1    2200 4100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	1600 3700 1850 3700
 Wire Wire Line
-	1850 3500 1850 4000
-Wire Wire Line
-	1850 3500 2050 3500
-Wire Wire Line
-	1850 4000 2050 4000
-Connection ~ 1850 3700
-Wire Wire Line
 	1600 3900 1950 3900
-Wire Wire Line
-	1950 3700 1950 4200
-Wire Wire Line
-	1950 3700 2050 3700
-Wire Wire Line
-	1950 4200 2050 4200
-Connection ~ 1950 3900
 $Comp
 L GS2 J10
 U 1 1 59FB0116
@@ -651,6 +579,17 @@ F 1 "BSS138" H 6750 3500 50  0000 L CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 6750 3425 50  0001 L CIN
 F 3 "" H 6550 3500 50  0001 L CNN
 	1    6550 3500
+	0    1    1    0   
+$EndComp
+$Comp
+L GS2 J6
+U 1 1 5A410B99
+P 2050 3150
+F 0 "J6" H 2150 3300 50  0000 C CNN
+F 1 "GS2" H 2150 3001 50  0000 C CNN
+F 2 "Connect:GS2" V 2124 3150 50  0001 C CNN
+F 3 "" H 2050 3150 50  0001 C CNN
+	1    2050 3150
 	0    1    1    0   
 $EndComp
 $EndSCHEMATC
